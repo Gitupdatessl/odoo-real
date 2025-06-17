@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="fullscreen_button.FullscreenPosButton">
+        <div class="oe_status cursor-pointer" t-on-click="toggleFullscreen">
+            <div class="js_connected oe_icon" title="Toggle Fullscreen Mode">
+                <i t-if="!isFullscreen" class="fa fa-fw fa-expand" role="img" aria-label="Fullscreen"></i>
+                <i t-else="" class="fa fa-fw fa-compress" role="img" aria-label="Exit Fullscreen"></i>
+            </div>
+        </div>
+    </t>
+
+</templates> 

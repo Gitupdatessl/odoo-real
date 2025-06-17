@@ -1,0 +1,34 @@
+.o_fullscreen_button {
+    cursor: pointer;
+    height: 100%;
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+        
+        &:hover {
+            color: inherit;
+        }
+    }
+    
+    // MuK theme compatibility
+    .mk_apps_sidebar_panel & {
+        color: #DEE2E6;
+    }
+    
+    // Ensure the button is visible in both light and dark themes
+    i {
+        font-size: 1.1em;
+    }
+}
+
+// Add some space between icon and text
+.o_fullscreen_button i + span {
+    margin-left: 4px;
+}
+
+// Ensure the button is visible in fullscreen mode
+body.o_fullscreen .o_fullscreen_button {
+    z-index: 1050;
+    position: relative;
+} 

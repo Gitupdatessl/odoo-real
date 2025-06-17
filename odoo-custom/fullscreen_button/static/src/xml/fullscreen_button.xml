@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="fullscreen_button.FullscreenButton" owl="1">
+        <div class="o_fullscreen_button d-flex align-items-center px-lg-2 h-100" t-on-click="toggleFullscreen">
+            <a href="#" class="d-flex align-items-center h-100 text-center px-0 px-md-2" title="Toggle Fullscreen">
+                <i class="fa fa-expand" t-if="!isFullscreen"/>
+                <i class="fa fa-compress" t-if="isFullscreen"/>
+                <span class="d-none d-md-inline-block ms-1">
+                    <t t-if="!isFullscreen">Fullscreen</t>
+                    <t t-else="">Exit Fullscreen</t>
+                </span>
+            </a>
+        </div>
+    </t>
+</templates> 
